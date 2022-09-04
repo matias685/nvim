@@ -27,7 +27,7 @@ vim.opt.termguicolors = true
 vim.mapleader = ' '
 vim.g.mapleader = ' '
 
-require('plugins')
-
 vim.cmd('au BufReadPost *.zsh,.zshrc set filetype=sh')
 vim.cmd('au BufReadPost *.conf set filetype=config')
+
+require('plugins')
