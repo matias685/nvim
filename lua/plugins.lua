@@ -15,6 +15,10 @@ return packer.startup({
 	"windwp/nvim-autopairs",
     config = function() require('plugins.autopairs') end
     }
+--    use {
+--    'romgrk/barbar.nvim',
+--    requires = {'kyazdani42/nvim-web-devicons'}
+--    }
     use {"ellisonleao/glow.nvim",
     config = function() require('plugins.glow') end
     }
@@ -32,19 +36,19 @@ return packer.startup({
     config = function() require('plugins.nvim-colorizer') end
     }
 
-    use {
-      'nvim-treesitter/nvim-treesitter',
-      requires = {
-        { 'nvim-treesitter/playground' }, { 'p00f/nvim-ts-rainbow' },
-        { 'JoosepAlviste/nvim-ts-context-commentstring' },
-        { 'windwp/nvim-ts-autotag' },
-        { 'nvim-treesitter/nvim-treesitter-textobjects' },
-        { 'RRethy/nvim-treesitter-textsubjects' },
-        { 'RRethy/nvim-treesitter-endwise' }
-      },
-      run = function() cmd('TSUpdate') end,
-        config = function() require('plugins.treesitter') end
-    }
+--   use {
+--     'nvim-treesitter/nvim-treesitter',
+--     requires = {
+--       { 'nvim-treesitter/playground' }, { 'p00f/nvim-ts-rainbow' },
+--       { 'JoosepAlviste/nvim-ts-context-commentstring' },
+--       { 'windwp/nvim-ts-autotag' },
+--       { 'nvim-treesitter/nvim-treesitter-textobjects' },
+--       { 'RRethy/nvim-treesitter-textsubjects' },
+--       { 'RRethy/nvim-treesitter-endwise' }
+--     },
+--     run = function() cmd('TSUpdate') end,
+--       config = function() require('plugins.treesitter') end
+--   }
 
     end
 })
