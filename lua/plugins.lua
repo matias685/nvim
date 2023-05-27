@@ -15,13 +15,6 @@ return packer.startup({
 	"windwp/nvim-autopairs",
     config = function() require('plugins.autopairs') end
     }
---    use {
---    'romgrk/barbar.nvim',
---    requires = {'kyazdani42/nvim-web-devicons'}
---    }
-    use {"ellisonleao/glow.nvim",
-    config = function() require('plugins.glow') end
-    }
     use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
